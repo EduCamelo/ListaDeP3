@@ -1,0 +1,457 @@
+import java.util.Scanner;
+// Questão 1
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); 
+        System.out.print("Digite seu nome: ");
+        String nome = input.next();
+        System.out.println("Bem vindo, Senhor(a) "+ nome);
+        input.close();
+    }
+
+// Questão 2
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); 
+        System.out.print("Digite sua idade: ");
+        int idade = input.nextInt();
+        System.out.println("Sua idade é: "+ idade);
+        input.close();
+    }
+
+// Questão 3
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); 
+        System.out.print("Digite um número inteiro: ");
+        int num = input.nextInt();
+        float x = (float)num;
+        System.out.println("O número convertido virou: "+ x);
+        input.close();
+    }
+
+// Questão 4
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); 
+        System.out.print("Digite um número inteiro: ");
+        int num = input.nextInt();
+        System.out.print("Digite outro número: ");
+        int num2 = input.nextInt();
+        num+= num2;
+        System.out.println("Os números somados ficaram : "+ num);
+        input.close();
+    }    
+
+// Questão 5
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); 
+        System.out.print("Digite um número inteiro: ");
+        double num = input.nextDouble();
+        System.out.println("O quadrado do número "+ num+ " é: "+ Math.pow(num, 2));
+        input.close();
+    }
+
+// Questão 6
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); 
+        System.out.print("Digite o ano que você nasceu: ");
+        int num = input.nextInt();
+        int x = 2023 - num;
+        System.out.println("Sua idade é: "+ x);
+        input.close();
+    }
+
+// Questão 7
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Digite seu nome: ");
+        String nome = input.next();
+        System.out.println("Digite seu sobrenome: ");
+        String sobrenome = input.next();
+        System.out.println("Olá, " + nome + " " + sobrenome + "!");
+        input.close();
+    }
+
+// Questão 8
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); 
+        int cont=0;
+        System.out.println("Digite uma sequencia de números que sejam separados por espaço: ");
+        String seq = input.nextLine();
+        if(seq.length() != 0){
+            cont++;
+        }
+        for(int i = 0; i < seq.length()  ;i++){
+            char teste = seq.charAt(i);
+            if(Character.isWhitespace(teste)){
+                cont++;
+            }
+        }
+        System.out.println("Os números digitados foram: " + seq + "\nTem "+cont+" número(s) nessa sequencia");
+        input.close();
+    }
+
+// Questão 9
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite um nome de um animal: ");
+        String animal = input.nextLine();
+        System.out.println("O animal que você digitou foi: "+ animal);
+        input.close();
+    }
+
+// Questão 10
+    public static void main(String[] args) {
+            Scanner input = new Scanner(System.in);
+            System.out.println("Digite seu nome: ");
+            String nome = input.next();
+            System.out.println("Digite seu sobrenome: ");
+            String sobrenome = input.next();
+            System.out.println("Olá, " + sobrenome + " " + nome + "!");
+            input.close();
+    }
+
+// Questão 11
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Digite uma frase: ");
+        String frase = input.nextLine();
+        System.out.println("Essa frase tem "+ frase.length()+ " caracteres");
+        input.close();
+    }
+
+// Questão 12
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite um número: ");
+        double num = input.nextDouble();
+        if(num % 2 != 0){
+            System.out.println("É um número impar");
+        }
+        else{
+            System.out.println("É um número par");
+        }
+        input.close();
+    }
+
+// Questão 13
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite um número: ");
+        int num = input.nextInt();
+        if(num > 0){
+            System.out.println("É um número positivo");
+        }
+        else if(num < 0){
+            System.out.println("É um número negativo");
+        }
+        else{
+            System.out.println("Zero não é par e nem impar");
+        }
+        input.close();
+    }
+
+// Questão 14
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite um número: ");
+        int num = input.nextInt();
+        System.out.print("Digite outro número: ");
+        int num2 = input.nextInt();
+        if(num > num2){
+        System.out.println("O número "+ num+ " é maior que o número " + num2);
+        }
+        else{
+            System.out.println("O número "+num2+ " é maior que o número " + num);
+        }
+        input.close();
+    }
+
+// Questão 15
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite sua altura: ");
+        int num = input.nextInt();
+        System.out.print("Digite seu peso: ");
+        int num2 = input.nextInt();
+        int IMC = num2/(num*num);
+        System.out.println("Seu IMC é: "+IMC);
+        input.close();
+    }
+
+// Questão 16
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite seu nome: ");
+        String nome = input.nextLine();
+        if(nome.length() >= 5){
+            System.out.println("O seu nome tem 5 carateres ou mais");
+        }
+        else{
+            System.out.println("Seu nome não tem mais que 5 carateres");
+        }
+        input.close();
+    }
+
+// Questão 17
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite seu estado civil: ");
+        String EstCivil = input.next();
+        System.out.println("Você é "+ EstCivil);
+        input.close();
+    }
+
+// Questão 18
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite a base do triangulo: ");
+        int base = input.nextInt();
+        System.out.print("Digite a altura do triangulo");
+        int alt = input.nextInt();
+        System.out.println("A área do triangulo é: "+ (base*alt));
+        input.close();
+    }
+
+// Questão 19
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite sua cidade: ");
+        String cidade = input.next();
+        if(cidade.charAt(0) != 'S'){
+            System.out.println("Sua cidade não começa com S");
+        }
+        else{
+            System.out.println("Sua cidade começa com S");
+        }
+        input.close();
+    }
+
+// Questão 20
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite um número: ");
+        double num = input.nextDouble();
+        System.out.print("Digite outro número: ");
+        double num2 = input.nextDouble();
+        System.out.println("O resto da divisão é: "+(num%num2));
+        input.close();
+    }
+
+// Questão 21
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); 
+        System.out.print("Digite um número decimal: ");
+        double num = input.nextDouble();
+        int x = (int)num;
+        System.out.println("O número convertido virou: "+ x);
+        input.close();
+    }
+
+// Questão 22
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in); 
+        System.out.print("Digite um número: ");
+        String num = input.next();
+        int num2 = Integer.parseInt(num)+10;
+        System.out.println("O novo número ficou "+ Integer.toString(num2));;
+        input.close();
+    }
+
+// Questão 23
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite uma data no formato dd/mm/aaaa : ");
+        String data = input.nextLine();
+        String[] data2 = data.split("/");
+
+        if (data2.length == 3) {
+            int dia = Integer.parseInt(data2[0]);
+            int mes = Integer.parseInt(data2[1]);
+            int ano = Integer.parseInt(data2[2]);
+
+            System.out.println("Dia: " + dia);
+            System.out.println("Mês: " + mes);
+            System.out.println("Ano: " + ano);
+
+            input.close();
+        }
+    }
+
+// Questão 24
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite o nome da sua cidade: ");
+        String cidade = input.next();
+        System.out.print("Digite o nome do seu estado: ");
+        String estado = input.next();
+        System.out.println("Você mora em: "+ cidade.concat(", "+estado));
+        input.close();
+    }
+
+// Questão 25
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite o ano do seu nascimento: ");
+        String ano = input.next();
+        String mensagem = "Bem-vindo ao nosso programa, nascido em ";
+        System.out.println(mensagem.concat(ano));
+        input.close();
+    }
+
+// Questão 26
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite um número inteiro: ");
+        int num = input.nextInt();
+        System.out.print("Digite uma frase: ");
+        String frase = input.nextLine();
+        System.out.println(frase + " " + num);
+        input.close();
+    }
+
+// Questão 27
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite nome do produto: ");
+        String produto = input.nextLine();
+        System.out.println("Digite o valor do produto: ");
+        double valor = input.nextDouble();
+        System.out.println(produto + " custa: R$" + valor);
+        input.close();
+    }
+
+// Questão 28
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite um número inteiro: ");
+        int num = input.nextInt();
+        System.out.println("O dobro desse número é: " + num*num);
+        input.close();
+    }
+
+// Questão 29
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite um e-mail: ");
+        String email = input.nextLine();
+        String verifica = "inválido";
+        for(int i = 0; i < email.length(); i++){
+            if(email.charAt(i) == '@'){
+                verifica = "Obrigado!";
+                break;
+            }
+        }
+        System.out.println(verifica);
+        input.close();
+    }
+
+// Questão 30
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite um numero: ");
+        double num1 = input.nextDouble();
+        System.out.print("digite outro número: ");
+        double num2 = input.nextDouble();
+        System.out.println("Soma: "+ (num1+num2));
+        System.out.println("Diferença: "+(num1-num2));
+        System.out.println("Produto: "+(num1*num2));
+        System.out.println("Quociente: "+(num1%num2));
+        input.close();
+    }
+
+// Questão 31
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite um numero: ");
+        double num1 = input.nextDouble();
+        System.out.print("digite outro número: ");
+        double num2 = input.nextDouble();
+        System.out.println("Area do triangulo: "+ ((num1*num2)/2));
+        input.close();
+    }
+
+// Questão 32
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite um numero: ");
+        double num1 = input.nextDouble();
+        System.out.println("Perímetro do circulo: "+ (Math.PI*num1*2));
+        input.close();
+    }
+
+// Questão 33
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite base: ");
+        double num1 = input.nextDouble();
+        System.out.print("digite altura: ");
+        double num2 = input.nextDouble();
+        System.out.println("Perímetro do circulo: "+ (2*(num1+num2)));
+        input.close();
+    }
+
+// Questão 34
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite número: ");
+        double num1 = input.nextDouble();
+        System.out.print("digite outro número: ");
+        double num2 = input.nextDouble();
+        System.out.print("digite outro número: ");
+        double num3 = input.nextDouble();
+        System.out.println("Perímetro do circulo: "+ ((num1+num2+num3)/3));
+        input.close();
+    }
+
+// Questão 35
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite número: ");
+        double num1 = input.nextDouble();
+        System.out.print("digite outro número: ");
+        double num2 = num1*12;
+        double num3 = num1*365;
+        System.out.println("Você viveu "+ num2+" em meses e viveu "+ num3+" em dias");
+        input.close();
+    }
+
+// Questão 36
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite um valor em reais: ");
+        double num1 = input.nextDouble();
+        System.out.print("digite a cotação do dólar: ");
+        double num2 = input.nextDouble();     
+        System.out.println(num1*num2);
+        input.close();
+    }
+
+// Questão 37
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite um número decimal: ");
+        double num1 = input.nextDouble();   
+        System.out.println("O número arredondado é: " + (int)Math.round(num1));
+        input.close();
+    }
+
+// Questão 38
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite número: ");
+        int num1 = input.nextInt();
+        System.out.print("digite outro número: ");
+        int num2 = input.nextInt();
+        System.out.print("digite outro número: ");
+        int num3 = input.nextInt();
+        System.out.println("Resultado da equação: "+ ((num1+num2)*num3));
+        input.close();
+    }
+
+// Questão 39
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite uma temperatura em celsius: ");
+        double num1 = input.nextDouble();
+        System.out.println("Resultado da transformação: "+ ((num1*9/5)+32));
+        input.close();
+    }

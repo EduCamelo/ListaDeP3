@@ -1,0 +1,476 @@
+// Questão 1 
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println();
+        int valor = input.nextInt();
+        if(valor >0){
+            System.out.println();
+        }
+        else if(valor < 0){
+            System.out.println();
+        }
+        else{
+            System.out.println();
+        }
+        input.close();
+    }
+
+// Questão 2
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println();
+        int idade = input.nextInt();
+        if(idade >= 18){
+            System.out.println();
+        }
+        else{
+            System.out.println();
+        }
+        input.close();
+    }
+
+// Questão 3
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println();
+        int valor1 = input.nextInt();
+        System.out.println();
+        int valor2 = input.nextInt(); 
+        if(valor1 > valor2){
+            System.out.println(valor1);
+        }
+        else if(valor1 < valor2){
+            System.out.println(valor2);
+        }
+        else{
+            System.out.println();
+        }
+        input.close();
+    }
+
+// Questão 4
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println();
+        int valor = input.nextInt();
+        if((valor % 2) == 0){
+            System.out.println("par");
+        }
+        else{
+            System.out.println();
+        }
+        input.close();
+    }
+
+// Questão 5
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println();
+        int valor1 = input.nextInt();
+        System.out.println();
+        int valor2 = input.nextInt();
+        System.out.println();
+        int valor3 = input.nextInt();
+        if((valor1 + valor2 + valor3)/3 >= 7){
+            System.out.println("aprovado");
+        }
+        else{
+            System.out.println();
+        }
+        input.close();
+    }
+
+// Questão 6
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println();
+        String nome1 = input.nextLine();
+        System.out.println();
+        String nome2 = input.nextLine();
+        if(nome1.compareTo(nome2) > 0){
+            System.out.println(nome1);
+        }
+        else if(nome1.compareTo(nome2) < 0){
+            System.out.println(nome2);
+        }
+        else{
+            System.out.println();
+        }
+        input.close();
+    }
+
+// Questão 7
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println();
+        String nome1 = input.next();
+        if(nome1.toLowerCase().charAt(0) == 'a' || nome1.toLowerCase().charAt(0) == 'e' ||nome1.toLowerCase().charAt(0) == 'i' ||nome1.toLowerCase().charAt(0) == 'o' ||nome1.toLowerCase().charAt(0) == 'u'){
+            System.out.println("sim");
+        }
+        else{
+            System.out.println();
+        }
+        input.close();
+    }
+
+// Questão 8
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int[] num1 = new int[3];
+        System.out.println();
+        num1[0] = input.nextInt();
+        System.out.println();
+        num1[1] = input.nextInt();
+        System.out.println();
+        num1[2] = input.nextInt();
+        bubblesort(num1, 3);
+        for(int i = 0; i<3 ;i++){
+            System.out.println(num1[i]);
+        }
+        input.close();
+
+    }
+
+    public static void bubblesort(int v[], int n) {
+        int i, fim, pos;
+        int chave;
+        boolean troca;
+        fim = n - 2;
+        pos = 0;
+        do {
+            troca = false;
+            for (i = 0; i <= fim; i++) {
+                if (v[i] > v[i + 1]) {
+                    chave = v[i];
+                    v[i] = v[i + 1];
+                    v[i + 1] = chave;
+                    pos = i;
+                    troca = true;
+                }
+            }
+            fim = pos - 1;
+        } while (troca == true);
+    }
+
+// Questão 9
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double alt = input.nextDouble();
+        System.out.println();
+        double peso = input.nextDouble();
+
+        double IMC = peso/Math.pow(peso, 2);
+        if(IMC < 18.5){
+            System.out.println();
+        }
+        else if(IMC >= 18.5 && IMC <= 24.9 ){
+            System.out.println();
+        }
+        else if(IMC >= 25 && IMC <= 29.9){
+            System.out.println();
+        }
+        else if(IMC >=30 && IMC<= 34.9){
+            System.out.println();
+        }
+        else{
+            System.out.println();
+        }
+    }
+
+// Questão 10
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int num1 = input.nextInt();
+        switch (num1) {
+            case 1:
+                System.out.println(); 
+                break;
+        
+            case 2:
+                System.out.println(); 
+                break;
+             
+            case 3:
+                System.out.println(); 
+                break;
+
+            case 4:
+                System.out.println(); 
+                break;
+
+            case 5:
+                System.out.println(); 
+                break;
+
+            case 6:
+                System.out.println(); 
+                break;
+
+            case 7:
+                System.out.println(); 
+                break;
+
+            case 8:
+                System.out.println(); 
+                break;
+
+            case 9:
+                System.out.println(); 
+                break;
+
+            case 10:
+                System.out.println(); 
+                break;
+
+            case 11:
+                System.out.println(); 
+                break;
+
+            case 12:
+                System.out.println(); 
+                break;
+
+            default:
+            System.out.println("Invalido");
+                break;
+        }
+    }
+
+// Questão 11
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double num1 = input.nextDouble();
+        if(num1 >= 1500.00){
+            num1 += num1*0.10;
+        }
+        else{
+            num1 += num1*0.15;
+        }
+        System.out.println(num1);
+    }
+
+// Questão 12
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int num1 = input.nextInt();
+        if(num1 % 3 ==0 && num1 % 5 == 0 ){
+            System.out.println();
+        }
+        else{
+            System.out.println();
+        }
+        System.out.println(num1);
+    }
+
+// Questão 13
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String dia = input.next().toLowerCase();
+        if(dia == "segunda"){
+            System.out.println();
+        }
+        else if(dia == "terça"){
+            System.out.println();
+        }
+        else if(dia == "quarta"){
+            System.out.println();
+        }
+        else if(dia == "quinta"){
+            System.out.println();
+        }
+        else if(dia == "sexta"){
+            System.out.println();
+        }
+        else if(dia == "sábado"){
+            System.out.println();
+        }
+        else if(dia == "domingo"){
+            System.out.println();
+        }
+        else{
+            System.out.println();
+        }
+    }
+
+// Questão 14
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int num1 = input.nextInt();
+        switch (num1) {
+            case 1:
+                System.out.println();
+                break;
+            case 2:
+                System.out.println();
+                break;
+            case 3:
+                System.out.println();
+                break;
+            case 4:
+                System.out.println();
+                break;
+            case 5:
+                System.out.println();
+                break;
+
+            default:
+                break;
+        }
+    }
+
+// Questão 15
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int num1 = input.nextInt();
+        switch (num1) {
+            case 1:
+                System.out.println();
+                break;
+            case 2:
+                System.out.println();
+                break;
+            case 3:
+                System.out.println();
+                break;
+            case 4:
+                System.out.println();
+                break;
+            case 5:
+                System.out.println();
+                break;
+
+            case 6:
+                System.out.println();
+                break;
+
+            case 7:
+                System.out.println();
+                break;
+
+            default:
+                break;
+        }
+    }
+
+// Questão 16
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        try {
+            System.out.print("Digite um número decimal: ");
+            double num1 = input.nextDouble();
+            
+            int novo1 = (int) Math.round(num1);
+            
+            System.out.println("Número arredondado: " + novo1);
+        } catch (Exception e) {
+            System.out.println("Ocorreu um erro: impossivel de arredondar o número");
+        }
+    }
+
+// Questão 17    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int num1 = input.nextInt();
+        if(num1 <=1){
+            System.out.println();
+        }
+        else if(num1 <=12){
+            System.out.println();
+        }
+        else if(num1 <=18){
+            System.out.println();
+        }
+        else{
+            System.out.println();
+        }
+    }
+
+// Questão 18
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String estado = input.next().toLowerCase();
+        switch (estado) {
+            case "solteiro":
+                System.out.println();
+                break;
+            case "casado":
+                System.out.println();
+                break;
+            
+            case "divorciado":
+                System.out.println();
+                break;
+            
+            case "viúvo":
+                System.out.println();
+                break;
+            
+            default:
+                break;
+        }
+    }
+
+// Questão 19
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int num1 = input.nextInt();
+        System.out.println();
+        int num2 = input.nextInt();
+        System.out.println();
+        int escolha = input.nextInt();
+        switch (escolha) {
+            case 1:
+                num1+= num2;
+                System.out.println(num1);
+                break;
+            case 2:
+                num1-= num2;
+                System.out.println(num1);
+                break;
+            case 3:
+                num1 *= num2;
+                System.out.println(num1);
+                break;
+            case 4:
+            num1 /= num2;
+                System.out.println(num1);
+                break;
+            default:
+            System.out.println();
+                break;
+        }
+    }
+
+// Questão 20
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        try{
+            System.out.println();
+            String nome = input.next();
+            System.out.println();
+            int idade = input.nextInt();
+            System.out.println(nome + idade);
+        }
+        catch(Exception e){
+            System.out.println("Número inválido");
+        }
+    }
+
+// Questão 21
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        try {
+            System.out.println("");
+            double metros = input.nextDouble();
+            
+            double cm = metros * 100;
+            double mm = metros * 1000;
+            double km = metros / 1000;
+            
+            System.out.println("Valor em centímetros: " + cm);
+            System.out.println("Valor em milímetros: " + mm);
+            System.out.println("Valor em quilômetros: " + km);
+        } catch (Exception e) {
+            System.out.println("Ocorreu um erro: valor inválido");
+        }
+    }
