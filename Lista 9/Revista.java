@@ -15,13 +15,13 @@ public class Revista  extends ItemBiblioteca{
     }
 
     @Override
-    public void calcular_multa(int qtdDias) {
-        double aux = qtdDias * 0.10;
-        System.out.println("Você vai ter que pagar: R$"+ aux);
+    public String toString() {
+        return super.toString()+ "edição=" + this.edicao;
     }
 
     @Override
-    public String toString() {
-        return super.toString()+ "edição=" + this.edicao;
+    public void calcular_multa(int qtdDias) {
+        double aux = qtdDias * 0.10;
+        System.out.println("Você vai ter que pagar: R$"+ aux);
     }
 }
